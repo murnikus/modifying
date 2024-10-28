@@ -16,12 +16,3 @@ void reverseIt(Iter begin, Iter end) {
     }
 }
 
-int main() {
-    std::vector<int> vec {1, 2, 3};
-    reverseIt(vec.begin(), vec.end());
-    
-    for (int val : vec) {
-        std::cout << val << " ";
-    }
-    return 0;
-}

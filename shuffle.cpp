@@ -12,16 +12,3 @@ void rand_shuffle(T first, T end) {
     }
 }
 
-int main() {
-    std::srand(static_cast<unsigned>(std::time(0))); 
-    std::vector<int> v{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-
-    rand_shuffle(v.begin(), v.end());
-
-    for (auto i = v.begin(); i < v.end(); ++i) {
-        std::cout << *i << " ";
-    }
-    std::cout << std::endl;
-
-    return 0;
-}
